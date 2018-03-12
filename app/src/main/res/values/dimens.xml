@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- This is a height for team name, red card and yellow card texts. -->
+    <dimen name="text_size_1">20sp</dimen>
+
+    <!-- This is a height for team score texts. -->
+    <dimen name="text_size_2">80sp</dimen>
+
+    <!-- This is a height for button texts. -->
+    <dimen name="text_size_3">16sp</dimen>
+
+</resources>

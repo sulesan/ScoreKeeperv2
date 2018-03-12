@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/FootballFieldPhotoTheme"
+                android:src="@drawable/ffield" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#5081C784"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TeamNameTheme"
+                        android:text="HOME TEAM" />
+
+                    <TextView
+                        android:id="@+id/home_team_score"
+                        style="@style/TeamScoreTheme"
+                        android:text="0" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/home_team_red_card"
+                            style="@style/RedCardTheme"
+                            android:text="0" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_foul_40" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/home_team_yellow_card"
+                            style="@style/YellowCardTheme"
+                            android:text="0" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_soccer_yellow_card_40" />
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/ButtonTheme1"
+                        android:onClick="addGoalForHomeTeam"
+                        android:text="GOAL" />
+
+                    <Button
+                        style="@style/ButtonTheme1"
+                        android:onClick="addRedCardForHomeTeam"
+                        android:text="RED CARD" />
+
+                    <Button
+                        style="@style/ButtonTheme1"
+                        android:onClick="addYellowCardForHomeTeam"
+                        android:text="YELLOW CARD" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#50FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TeamNameTheme"
+                        android:text="AWAY TEAM" />
+
+                    <TextView
+                        android:id="@+id/away_team_score"
+                        style="@style/TeamScoreTheme"
+                        android:text="0" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/away_team_red_card"
+                            style="@style/RedCardTheme"
+                            android:text="0" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_foul_40" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/away_team_yellow_card"
+                            style="@style/YellowCardTheme"
+                            android:text="0" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icons8_soccer_yellow_card_40" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                        style="@style/ButtonTheme1"
+                        android:onClick="addGoalForAwayTeam"
+                        android:text="GOAL" />
+
+                    <Button
+                        style="@style/ButtonTheme1"
+                        android:onClick="addRedCardForAwayTeam"
+                        android:text="RED CARD" />
+
+                    <Button
+                        style="@style/ButtonTheme1"
+                        android:onClick="addYellowCardForAwayTeam"
+                        android:text="YELLOW CARD" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                style="@style/ButtonTheme2"
+                android:onClick="resetScore"
+                android:text="Reset" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
